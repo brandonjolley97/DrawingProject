@@ -13,6 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.SpringLayout;
 
 import drawing.controller.DrawingController;
+import drawing.view.ShapePane;
 
 public class DrawingPane extends JPanel
 {
@@ -54,12 +55,6 @@ public class DrawingPane extends JPanel
 		{
 			public void actionPerformed(ActionEvent click)
 			{
-				int xPosition = (int)(Math.random() * 600);
-				int yPosition = (int)(Math.random() * 600);
-				int width = (int)(Math.random() * 50);
-				int height = (int)(Math.random() * 50);		
-				
-				rectangleList.add(new Rectangle(xPosition, yPosition, width, height));
 				repaint();
 			} 
 		});
